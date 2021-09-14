@@ -1,0 +1,13 @@
+<table class="table table-sm">
+  <tr *ngFor="let card of cardService.cards">
+    <td>{{ card.titular }}</td>
+    <td>{{ card.numeroTarjeta }}</td>
+    <td>{{ card.fechaExpriacion }}</td>
+    <td>
+      <i class="fas fa-edit fa-lg text-info" style="cursor: pointer;" (click)="editCard(card)"></i>
+    </td>
+    <td>
+      <i class="fas fa-trash-alt fa-lg text-danger" style="cursor: pointer;" (click)="deleteCard(card.id)"></i>
+    </td>
+  </tr>
+</table>

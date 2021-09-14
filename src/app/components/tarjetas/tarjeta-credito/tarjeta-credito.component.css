@@ -1,0 +1,15 @@
+input.ng-touched.ng-invalid {
+    border-color: #DC3545;
+}
+
+input.ng-valid{
+    border-color: #28A745;
+}
+
+.green-icon {
+    color: #28A745;
+}
+
+.red-icon {
+    color: #DC3545;
+}
